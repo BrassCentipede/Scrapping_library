@@ -15,9 +15,8 @@ void print_Host_tokens(struct HOST HOST_LEVEL){
     cout << "SUBDOMAINN: " << HOST_LEVEL.SUBDOMAIN << endl;
     cout << "TLD: " << HOST_LEVEL.TLD << endl;
     cout << "---------- END PRINTING HOST LEVEL COMPONENTS----------" << endl;
+    cout << "" << endl;
 }
-
-
 
 void tokenizeTheHost(struct HOST& HOST_LEVEL){
     char delim[] = ".";
