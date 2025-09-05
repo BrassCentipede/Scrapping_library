@@ -14,8 +14,6 @@ struct HOST{
 };
 
 struct URL{
-    
-
     char *PROTOCOL;
     struct HOST HOST_LEVEL;
     char **SUB_DIRECTORIES = new char*[BUFF_SIZE];

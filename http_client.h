@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#include <openssl/bio.h> /* BasicInput/Output streams */
+#include "openssl/bio.h"/* BasicInput/Output streams */
 #include <openssl/err.h> /* errors */
 #include <openssl/ssl.h> /* core library */
 
@@ -26,6 +26,7 @@ using namespace std;
 #define CERT_LOCATION "/etc/ssl/certs/ca-certificates.crt"
 #elif __APPLE__ || __MACH__
 #define CERT_LOCATION  "/opt/homebrew/etc/ca-certificates/cert.pem"
+
 #else
 #define CERT_LOCATION "certs/cacert.pem"
 #endif
